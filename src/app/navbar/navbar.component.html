@@ -1,0 +1,12 @@
+<div
+  class="container-fluid d-flex justify-content-center align-items-center pt-3"
+  [ngStyle]="navBar"
+>
+  <ul>
+    <li [ngStyle]="navLi" *ngFor="let item of items" class="active">
+      <a href="#" [ngStyle]="navLinks">{{ item }}</a>
+    </li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
